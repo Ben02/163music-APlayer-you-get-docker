@@ -60,17 +60,18 @@ def netease_cloud_music(genre,rid,qlrc):
         playlist_info["playlist"] = j["result"]["name"]
         playlist_info["pic_url"] = j['result']['coverImgUrl']
         songs_info = []
+        music_info = {}
         for i in j['result']['tracks']:
-            song_info = get_song_info(i)
+            music_info = get_song_info(i)
             if qlrc == 1:
                 try:
                     lyric = netease_lyric_download(rid)
                 except:
                     lyric = None
+                music_info["lyric"] = lyric
             else:
                 pass
-            song_info["lyric"] = lyric
-            songs_info.append(song_info)
+            songs_info.append(music_info)
         playlist_info["songs_info"] = songs_info
         return playlist_info
 
