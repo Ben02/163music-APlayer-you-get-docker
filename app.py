@@ -110,7 +110,7 @@ def player():
 		playlist_info = netease.netease_cloud_music("playlist",playlist_id,0)
 		songs_info = playlist_info["songs_info"]
 		title = playlist_info["playlist"]
-		showlrc = qlrc
+		showlrc = "0"
 	elif song_id is not None:
 		song_info = netease.netease_cloud_music("song",song_id,1)
 		title = "%s - %s" %(song_info["title"],song_info["artist"])
@@ -182,7 +182,7 @@ def iframe():
 		playlist_info = netease.netease_cloud_music("playlist",playlist_id,0)
 		songs_info = playlist_info["songs_info"]
 		title = playlist_info["playlist"]
-		showlrc = "0"
+		showlrc = qlrc
 	elif song_id is not None:
 		song_info = netease.netease_cloud_music("song",song_id,1)
 		title = "%s - %s" %(song_info["title"],song_info["artist"])
