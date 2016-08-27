@@ -52,7 +52,16 @@ def netease_cloud_music(genre,rid,qlrc):
         album_info["pic_url"] = j['album']['picUrl']
         songs_info = []
         for i in j['album']['songs']:
-            songs_info.append(get_song_info(i))
+            song_info = get_song_info(i)
+            if qlrc == "1":
+                try:
+                    lyric = netease_lyric_download(i['id'])
+                except:
+                    lyric = None
+                song_info["lyric"] = lyric
+            else:
+                pass
+            songs_info.append(song_info)
         album_info["songs_info"] = songs_info
         return album_info
 
@@ -62,7 +71,6 @@ def netease_cloud_music(genre,rid,qlrc):
         playlist_info["playlist"] = j["result"]["name"]
         playlist_info["pic_url"] = j['result']['coverImgUrl']
         songs_info = []
-        music_info = {}
         for i in j['result']['tracks']:
             song_info = get_song_info(i)
             if qlrc == "1":
@@ -80,7 +88,7 @@ def netease_cloud_music(genre,rid,qlrc):
     elif genre == "song":
         j = requests.get("http://music.163.com/api/song/detail/?id=%s&ids=[%s]&csrf_token=" % (rid, rid), headers={"Referer": "http://music.163.com/"}).json()
         song_info = get_song_info(j["songs"][0])
-        if qlrc == 1:
+        if qlrc == "1":
             try:
                 lyric = netease_lyric_download(rid)
             except:
@@ -301,4 +309,4 @@ def api_v2(genre,s,qlrc):
         else:
             return netease_cloud_music("song",song_search(s,1)[0]["song_id"],qlrc)
     else:
-        return netease_cloud_music(genre,s,0)
+        return netease_cloud_music(genre,s,qlrc)
