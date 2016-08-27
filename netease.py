@@ -62,16 +62,16 @@ def netease_cloud_music(genre,rid,qlrc):
         songs_info = []
         music_info = {}
         for i in j['result']['tracks']:
-            music_info = get_song_info(i)
+            song_info = get_song_info(i)
             if qlrc == 1:
                 try:
-                    lyric = "[00:00.840]999"
+                    lyric = netease_lyric_download(i['id'])
                 except:
                     lyric = None
-                music_info["lyric"] = lyric
+                song_info["lyric"] = lyric
             else:
                 pass
-            songs_info.append(music_info)
+            songs_info.append(song_info)
         playlist_info["songs_info"] = songs_info
         return playlist_info
 
