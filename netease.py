@@ -5,6 +5,7 @@ import base64
 import re
 import json
 import time
+from functools import lru_cache
 from concurrent.futures import ProcessPoolExecutor
 from requests import Session
 from requests_futures.sessions import FuturesSession
@@ -41,6 +42,7 @@ def make_url(songNet, dfsId):
     mp3_url = "http://%s/%s/%s.mp3" % (songNet, encId, dfsId)
     return mp3_url
 
+@lru_cache(maxsize=32)
 def netease_cloud_music(genre,rid,qlrc):
     if genre == "album":
         album_info = {}
