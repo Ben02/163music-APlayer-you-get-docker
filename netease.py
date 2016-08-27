@@ -67,7 +67,7 @@ def netease_cloud_music(genre,rid,qlrc):
                 try:
                     lyric = netease_lyric_download(rid)
                 except:
-                    lyric = None
+                    lyric = "[00:00.01]fuck"
                 music_info["lyric"] = lyric
             else:
                 pass
