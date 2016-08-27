@@ -179,7 +179,7 @@ def iframe():
 		title = "%s - %s" %(album_info["album"],album_info["artist"])
 		showlrc = "0"
 	elif playlist_id is not None:
-		playlist_info = netease.netease_cloud_music("playlist",playlist_id,1)
+		playlist_info = netease.netease_cloud_music("playlist",playlist_id,qlrc)
 		songs_info = playlist_info["songs_info"]
 		title = playlist_info["playlist"]
 		showlrc = qlrc
