@@ -65,7 +65,7 @@ def netease_cloud_music(genre,rid,qlrc):
         music_info = {}
         for i in j['result']['tracks']:
             song_info = get_song_info(i)
-            if qlrc = 1:
+            if qlrc == 1:
                 try:
                     lyric = netease_lyric_download(i['id'])
                 except:
