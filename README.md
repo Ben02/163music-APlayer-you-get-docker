@@ -1,17 +1,40 @@
+![](http://labimg.qiniudn.com/Busic/1.jpg)
+
 # 163music-Aplayer-you-get-mod
 
-新功能：
+如你所见，这是一个基于项目 163music-Aplayer-you-get 的网易云音乐外链播放器
 
-缓存
-列表模式的歌词
-专辑名字
-美化
-双歌手
-响应式
-最新版AP
-增加参数
+相比原版增加的东西有：
 
+1. 增加了有列表时显示歌词的功能
+2. 因为播放长歌单时加载比较久所以加上一个简单的缓存（但长歌单首次加载也是会慢的）
+3. 播放列表里可以显示专辑名字（以后考虑加上开关）
+4. 更新至当前最新版的 APlayer
+5. 增加了几个调整播放器的参数，如调整颜色的 `color=` 和调整高度的 `height=`
+6. 美化了原版的 APlayer
+7. Responsive，不需要单独的移动页面（但我还是保留了文件）
 
+## iframe 模式使用方法
+
+首先指定 `album=`、`song=`、`playlist=`、`program=`、`radio=`、`mv=` 中的一个的 id。（分别是专辑、单曲、歌单、节目、电台、MV）
+
+然后自行调整以下自定义参数：
+
+- `qlrc=` 控制歌词开关，值 1 为开，默认值 0 为关
+- `qssl=` 控制 ssl 连接开关，值 1 为开，默认值 0 为关
+- `qnarrow=` 控制迷你版播放界面的开关，值 1 为开，默认值 0 为关
+- `max_width=` 控制播放器最大宽度，默认值 100%，可定义为 20em，500px 等
+- `height=` 控制播放器高度，默认值 20em
+- `autoplay=` 控制自动播放开关，默认值 1 为开，值 0 为关
+- `color=` 定制播放器高亮颜色，可定义为 blue，pink，rgb(0,0,0), #999 等
+
+## 示例
+
+http://tomoki-busic.daoapp.io/iframe?playlist=3283440&max_width=22em&qlrc=1&height=25em
+http://tomoki-busic.daoapp.io/iframe?album=13384&qlrc=1&max_width=50%&qnarrow=1
+http://tomoki-busic.daoapp.io/iframe?song=193801&max_width=25em&autoplay=1&qlrc=1&height=25em
+
+以下为原版 README
 
 # 163music-APlayer-you-get BETA5 init
 ## Yes! it's Beta5 now!......what's new?
