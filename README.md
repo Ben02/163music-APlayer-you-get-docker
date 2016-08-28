@@ -1,3 +1,18 @@
+# 163music-Aplayer-you-get-mod
+
+新功能：
+
+缓存
+列表模式的歌词
+专辑名字
+美化
+双歌手
+响应式
+最新版AP
+增加参数
+
+
+
 # 163music-APlayer-you-get BETA5 init
 ## Yes! it's Beta5 now!......what's new?
 > I just rewrote everything.
