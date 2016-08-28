@@ -128,13 +128,15 @@ def get_song_info(song):
         title = song["name"]
         album = song["album"]["name"]
         pic_url = song["album"]["picUrl"]
+        album_name = song["album"]["name"]
         artist = song["artists"][0]["name"]
     except:
         title = None
         album = None
         pic_url = None
+        album_name = None
         artist = None
-    return {"url_best": url_best, "title": title, "album":album,"pic_url":pic_url, "artist":artist}
+    return {"url_best": url_best, "title": title, "album":album,"pic_url":pic_url, "artist":artist, "album_name":album_name}
 
 def netease_video_download(vinfo):
     title = "%s - %s" % (vinfo['name'], vinfo['artistName'])
