@@ -102,20 +102,20 @@ def player():
 	mv_id = request.args.get("mv")
 
 	if album_id is not None:
-		album_info = netease.netease_cloud_music("album",album_id,qlrc)
+		album_info = netease.netease_cloud_music("album",album_id,"1")
 		songs_info = album_info["songs_info"]
 		title = "%s - %s" %(album_info["album"],album_info["artist"])
-		showlrc = qlrc
+		showlrc = "1"
 	elif playlist_id is not None:
-		playlist_info = netease.netease_cloud_music("playlist",playlist_id,qlrc)
+		playlist_info = netease.netease_cloud_music("playlist",playlist_id,"1")
 		songs_info = playlist_info["songs_info"]
 		title = playlist_info["playlist"]
-		showlrc = qlrc
+		showlrc = "1"
 	elif song_id is not None:
-		song_info = netease.netease_cloud_music("song",song_id,qlrc)
+		song_info = netease.netease_cloud_music("song",song_id,"1")
 		title = "%s - %s" %(song_info["title"],song_info["artist"])
 		songs_info = [song_info]
-		showlrc = qlrc
+		showlrc = "1"
 	elif program_id is not None:
 		song_info = netease.netease_cloud_music("program",program_id,0)
 		title = song_info["album"]
