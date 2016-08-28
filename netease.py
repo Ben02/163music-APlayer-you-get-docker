@@ -42,7 +42,7 @@ def make_url(songNet, dfsId):
     mp3_url = "http://%s/%s/%s.mp3" % (songNet, encId, dfsId)
     return mp3_url
 
-@lru_cache(maxsize=32)
+@lru_cache(maxsize=16)
 def netease_cloud_music(genre,rid,qlrc):
     if genre == "album":
         album_info = {}
