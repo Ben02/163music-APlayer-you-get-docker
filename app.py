@@ -135,7 +135,7 @@ def player():
 		abort(404)
 
 	if user_agent.is_mobile:
-		#return render_template("aplayer_mobile.html",songs_info=songs_info,title=title,showlrc=showlrc,song_id=song_id)
+		return render_template("aplayer.html",songs_info=songs_info,title=title,showlrc=showlrc,song_id=song_id)
 	else:
 		return render_template("aplayer.html",songs_info=songs_info,title=title,showlrc=showlrc,song_id=song_id)
 
