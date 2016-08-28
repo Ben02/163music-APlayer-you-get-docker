@@ -197,7 +197,8 @@ class APlayer {
                         <span class="aplayer-list-cur" style="background: ${this.option.theme};"></span>
                         <span class="aplayer-list-index">${(i + 1)}</span>
                         <span class="aplayer-list-title">${this.option.music[i].title}</span>
-                        <span class="aplayer-list-author">${this.option.music[i].author}</span>
+                        <span class="aplayer-author"> - ${this.option.music[i].author}</span>
+                        <span class="aplayer-list-author">${this.option.music[i].album_name}</span>
                     </li>`
             }
             eleHTML += `
