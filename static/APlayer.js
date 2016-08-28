@@ -4,6 +4,8 @@ require('./APlayer.scss');
 
 let instances = [];
 
+export {APlayer};
+
 class APlayer {
     /**
      * APlayer constructor function
@@ -750,4 +752,3 @@ class APlayer {
     }
 }
 
-export {APlayer};
