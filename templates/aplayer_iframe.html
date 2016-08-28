@@ -5,6 +5,14 @@
       <title>{{title}}</title>
       <link rel="shortcut icon" href="static/favicon.ico">
       <link rel="stylesheet" href="static/reset.css">
+      <style type="text/css">
+        .aplayer-list{
+        height:{{height}};
+        }
+        .container {
+        max-width: {{max_width}};
+        }
+      </style>
    </head>
    <body>
       <div class="container">
@@ -18,7 +26,7 @@
              autoplay: {{autoplay}},
              showlrc: {{showlrc}},
              mutex: true,
-             theme: '#42b983',
+             theme: '{{color}}',
               {% if song_id == None %}
              music: [
                  {% for song_info in songs_info %}

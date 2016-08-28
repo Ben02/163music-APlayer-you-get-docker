@@ -153,6 +153,8 @@ def iframe():
 	qnarrow = request.args.get("qnarrow")
 	max_width = request.args.get("max_width")
 	autoplay = request.args.get("autoplay")
+	height = request.args.get("height")
+	color = request.args.get("color")
 
 	if qnarrow is None:
 		qnarrow = "false"
@@ -168,7 +170,17 @@ def iframe():
 		max_width = "100%"
 	else:
 		pass
-		
+	
+	if color is None:
+		color = "#42b983"
+	else:
+		pass
+
+	if height is None:
+		height = "20em"
+	else:
+		pass
+
 	if autoplay is None:
 		autoplay = "true"
 	else:
@@ -211,7 +223,7 @@ def iframe():
 	else:
 		abort(404)
 
-	return render_template("aplayer_iframe.html",songs_info=songs_info,title=title,showlrc=showlrc,qnarrow=qnarrow,max_width=max_width,song_id=song_id,autoplay=autoplay)
+	return render_template("aplayer_iframe.html",songs_info=songs_info,title=title,showlrc=showlrc,qnarrow=qnarrow,max_width=max_width,song_id=song_id,autoplay=autoplay,height=height,color=color)
 
 if __name__ == "__main__":
     app.run()
