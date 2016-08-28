@@ -131,8 +131,10 @@ def get_song_info(song):
         album_name = song["album"]["name"]
         if song["artists"][1]["name"] is not None:
             artist = song["artists"][0]["name"] + " / " + song["artists"][1]["name"]
-        else:
+        elif song["artists"][0]["name"] is not None:
             artist = song["artists"][0]["name"]
+        else:
+            pass
     except:
         title = None
         album = None
