@@ -1,0 +1,116 @@
+    body, .aplayer {
+        font-family: Segoe UI Light,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft Jhenghei,Microsoft Yahei,Arial,sans-serif!important;
+         color:#2c3e50!important;
+         }
+         .container {
+         max-width: 100%;
+         }
+         h1 {
+         font-size: 54px;
+         color: #333;
+         margin: 30px 0 10px;
+         }
+         h2 {
+         font-size: 22px;
+         color: #555;
+         }
+         h3 {
+         font-size: 24px;
+         color: #555;
+         }
+         hr {
+         display: block;
+         width: 7rem;
+         height: 1px;
+         margin: 2.5rem 0;
+         background-color: #eee;
+         border: 0;
+         }
+         a {
+         color: #08c;
+         text-decoration: none;
+         }
+         p {
+         font-size: 18px;
+         }
+         
+.aplayer-list{
+        height:20em;
+      }
+      .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+        background: #e9e9e9!important;
+      }
+      .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+        display: none;
+      }
+      .aplayer-bar-wrap{
+        margin:0!important;
+        padding: 0!important;
+        height:4px!important;
+      }
+     .aplayer .aplayer-info .aplayer-controller .aplayer-time{
+        bottom: -24px!important;
+      }
+      .aplayer-bar-wrap .aplayer-bar .aplayer-played, .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+        height:4px!important;
+      }
+      ::-webkit-scrollbar{height: 5px;width:4px;margin-right:2px}::-webkit-scrollbar-track-piece{border-top: 0;background-color:#F5F5F5;border-left:0;}::-webkit-scrollbar-thumb{background:#CBCBCB;width:4px}::-webkit-scrollbar-thumb:hover{background:#42b983}
+      .aplayer .aplayer-lrc p, .aplayer .aplayer-list ol li .aplayer-list-index{
+        color: #2c3e50 !important
+      }
+      .aplayer .aplayer-list ol li{
+        font-size: 13px!important;
+      }
+      .aplayer .aplayer-author, .aplayer .aplayer-list ol li .aplayer-list-author{
+        color: #2c3e50 !important;
+        opacity: .66;
+        font-size: 12px!important;
+      }
+      .aplayer .aplayer-author{
+        margin-left: 3px;
+      }
+      .aplayer .aplayer-info .aplayer-music .aplayer-title{
+        font-size: 16px!important;
+      }
+      .aplayer-bar-wrap .aplayer-bar{
+        background: #eee!important;
+        height:4px!important;
+      }
+      .aplayer .aplayer-list ol li .aplayer-list-author{
+        font-size: 12px!important;
+      }
+      .aplayer .aplayer-list ol li .aplayer-list-author::before{
+        content: '<'
+      }
+      .aplayer .aplayer-list ol li .aplayer-list-author::after{
+        content: '>'
+      }
+      .aplayer .aplayer-info .aplayer-music{
+        margin-top: -6px;
+        margin-left: 6px
+      }
+      .aplayer .aplayer-lrc{
+        height: 70px!important;
+        text-align: left!important;
+        margin: -8px 0 -21px 8px!important;
+        z-index: -1;
+      }
+      .aplayer .aplayer-pic .aplayer-pause{
+        width:18px!important;
+        height:18px!important;
+      }
+      .aplayer .aplayer-pic .aplayer-pause .aplayer-icon-pause{
+        height: 14px!important;
+        width: 14px!important;
+      }
+      svg{
+        display: block;
+      }
+      .aplayer .aplayer-list ol li{
+        border-top:1px solid #efefef!important;
+      }
+      .aplayer{
+        border: 4px solid #eee;
+        border-radius: 0!important;
+        box-shadow: none!important;
+      }
