@@ -130,8 +130,10 @@ def get_song_info(song):
         pic_url = song["album"]["picUrl"]
         album_name = song["album"]["name"]
         artist = song["artists"][0]["name"]
-        if song["artists"][1]["name"] is not None:
+        try:
             artist = song["artists"][0]["name"] + " / " + song["artists"][1]["name"]
+        except:
+            artist = song["artists"][0]["name"]
     except:
         title = None
         album = None
