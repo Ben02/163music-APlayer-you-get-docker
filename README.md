@@ -1,4 +1,4 @@
-![](http://labimg.qiniudn.com/Busic/1.jpg)
+![](http://labimg.qiniudn.com/Busic/1.png)
 
 # 163music-Aplayer-you-get-mod
 
