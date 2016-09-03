@@ -36,11 +36,19 @@
 
 #### 示例
 
-歌单：http://busic.daoapp.io/iframe?playlist=90664422&qlrc=1&height=20em
+歌单：[http://busic.daoapp.io/iframe?playlist=90664422&qlrc=1&height=20em](http://busic.daoapp.io/iframe?playlist=90664422&qlrc=1&height=20em)
 
-专辑（迷你模式）：http://busic.daoapp.io/iframe?album=13384&qlrc=1&max_width=50%&qnarrow=1
+专辑（迷你模式）：[http://busic.daoapp.io/iframe?album=13384&qnarrow=1&height=0](http://busic.daoapp.io/iframe?album=13384&qnarrow=1&height=0)
 
-单曲：http://busic.daoapp.io/iframe?song=193801&max_width=25em&autoplay=1&qlrc=1&height=25em
+单曲：[http://busic.daoapp.io/iframe?song=193801&max_width=25em&autoplay=1&qlrc=1&height=25em](http://busic.daoapp.io/iframe?song=193801&max_width=25em&autoplay=1&qlrc=1&height=25em)
+
+[![](http://labimg.qiniudn.com/Busic/4.png)](http://labimg.qiniudn.com/Busic/4.png)
+
+[![](http://labimg.qiniudn.com/Busic/5.png)](http://labimg.qiniudn.com/Busic/5.png)
+
+[![](http://labimg.qiniudn.com/Busic/6.png)](http://labimg.qiniudn.com/Busic/6.png)
+
+[![](http://labimg.qiniudn.com/Busic/7.png)](http://labimg.qiniudn.com/Busic/7.png)
 
 ## 部署方法
 

@@ -36,6 +36,7 @@
                      url: '{{song_info["url_best"]}}',
                      pic: '{{song_info["pic_url"]}}',
                      lrc: '{{ song_info["lyric"] }}',
+                     album_name: '{{song_info["album_name"]}}',
                  },
                  {% endfor %}
              ]
@@ -46,6 +47,7 @@
                      url: '{{songs_info[0]["url_best"]}}',
                      pic: '{{songs_info[0]["pic_url"]}}',
                      lrc: '{{ songs_info[0]["lyric"] }}',
+                     album_name: '{{songs_info[0]["album_name"]}}',
                  }
               {% endif %}
          });
